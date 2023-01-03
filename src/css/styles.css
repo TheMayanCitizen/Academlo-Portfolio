@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+:root {
+  --circle-icons: #8e7bef;
+  --button: #5d3bef;
+  --bg: #f9f6ff;
+  --title: #222222;
+  --subtitle: #423f40;
+  --white: #ffffff;
+  --circles-contact: #f9f5f2;
+  --ff: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--ff);
+}
+body {
+  display: grid;
+  justify-items: center;
+}
+
+.card__menu {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card__title {
+  color: var(--title);
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.card__subtitle {
+  color: var(--subtitle);
+  font-weight: 400;
+}
+.card {
+  background-color: var(--bg);
+  height: 100%;
+  max-width: 400px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 3rem;
+}
+
+.card__header {
+  display: grid;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.card__title--header {
+  color: var(--title);
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+}
+
+.card__subtitle--header {
+  font-size: 16px;
+  text-align: center;
+}
+
+.card__social {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card__social--item {
+  background-color: var(--circle-icons);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.card__social--item img {
+  width: 24px;
+}
+
+.button {
+  margin: auto;
+  width: 85%;
+  height: 3rem;
+  background-color: var(--button);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  color: var(--white);
+  font-size: 16px;
+  border: none;
+}
+
+.button__preppend {
+  width: 20px;
+}
+
+.card__about {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card__subtitle--about {
+  font-size: 16px;
+  text-align: center;
+}
+
+.card__skills {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.card__skills--item {
+  background-color: var(--circle-icons);
+  padding: 20px 10px;
+}
+
+.card__skills--header {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+}
+
+.card__title--small {
+  font-size: 15px;
+  text-align: center;
+}
+
+.card__subtitle--small {
+  font-size: 12px;
+}
+
+.card__exp .card__title {
+  display: block;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.card__exp--item {
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "img title . ."
+    "img title . years"
+    "img title . .";
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card__exp--item img {
+  grid-area: img;
+}
+
+.card__exp--list {
+  grid-area: title;
+}
+
+.card__title--big {
+  grid-area: years;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.card__subtitle--small {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--subtitle);
+}
+
+.card__subtitle--tiny {
+  font-size: 10px;
+  color: var(--subtitle);
+}
+
+.card_portfolio .card__title {
+  display: block;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.card__portfolio--imgs {
+  display: grid;
+  gap: 1rem;
+}
+
+.card__contact .card__title {
+  display: block;
+  text-align: center;
+}
+
+.card__contact--item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1.8rem 0;
+}
+
+.card__contact--item img {
+  width: 60px;
+  background-color: var(--circles-contact);
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.card__title--big {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.card__subtitle--smal {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--);
+}
+
+.card__footer--purple {
+  color: var(--button);
+  font-weight: 600;
+}
