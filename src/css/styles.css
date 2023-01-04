@@ -148,6 +148,14 @@ body {
   text-align: center;
 }
 
+.card__rule {
+  height: 20px;
+}
+.card__title--small_Rule {
+  font-size: 15px;
+  margin-left: 5px;
+}
+
 .card__subtitle--small {
   font-size: 12px;
 }
