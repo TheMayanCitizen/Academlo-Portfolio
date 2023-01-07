@@ -8,6 +8,8 @@
   --subtitle: #423f40;
   --white: #ffffff;
   --circles-contact: #f9f5f2;
+  --navbar: #8e7bef;
+  /* #c0deff */
   --ff: "Montserrat", sans-serif;
 }
 
@@ -15,19 +17,70 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-margin-top: 50px;
   font-family: var(--ff);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 body {
   display: grid;
   justify-items: center;
 }
 
-.card__menu {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
+ul {
+  list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.card__menu {
+  background-color: var(--navbar);
+  border: 2px solid var(--subtitle);
+  width: 400px;
+  height: 30px;
+  position: fixed;
+  top: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.burguer-menu {
+  display: block;
+  cursor: pointer;
+}
+
+.menu {
+  background-color: var(--navbar);
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  min-height: 100vh;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.5rem;
+
+  margin-left: -100%;
+
+  transition: margin-left 0.5s;
+}
+
+.menu__pop {
+  margin-left: 0;
+}
+
+.card__home {
+  padding-top: 50px;
+}
 .card__title {
   color: var(--title);
   font-weight: 600;
@@ -228,6 +281,7 @@ body {
 .card__contact--item img {
   width: 60px;
   background-color: var(--circles-contact);
+  border: 2px solid var(--navbar);
   border-radius: 50%;
   padding: 15px;
 }
@@ -246,4 +300,6 @@ body {
 .card__footer--purple {
   color: var(--button);
   font-weight: 600;
+  text-align: center;
+  margin-bottom: 0.5rem;
 }

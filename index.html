@@ -8,11 +8,32 @@
     <title>Portfolio</title>
   </head>
   <body>
+    <nav class="card__menu">
+      <a href="#home" class="card__title">Academlo</a>
+      <ul class="menu">
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
+        <li>
+          <a href="#experience">Experience</a>
+        </li>
+        <li>
+          <a href="#portfolio">Portfolio</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+      <img src="./src/íconos/menu.svg" alt="" class="burguer-menu" />
+    </nav>
     <div class="card">
-      <nav class="card__menu">
-        <img src="./src/íconos/menu.svg" alt="" />
-      </nav>
-      <section class="card__home">
+      <section class="card__home" id="home">
         <img
           src="./src/Imágenes/photo mobile.png"
           alt="designer picture"
@@ -44,11 +65,12 @@
             alt="envelope"
             class="button__preppend"
           />
-          <span class="button__body">Contáctame</span>
+          <span class="button__body">Contact me</span>
         </button>
       </section>
-      <section class="card__about">
-        <span class="card__title">Acerca de mí</span>
+
+      <section class="card__about" id="about">
+        <span class="card__title">About me</span>
         <p class="card__subtitle card__subtitle--about">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat
           quas, delectus rerum molestiae quia exercitationem cumque eaque! Saepe
@@ -57,8 +79,8 @@
         </p>
       </section>
 
-      <section class="card__skills">
-        <span class="card__title">Mis habilidades</span>
+      <section class="card__skills" id="skills">
+        <span class="card__title">My Skills</span>
         <div class="card__container">
           <div class="card__skills--item">
             <div class="card__skills--header">
@@ -88,8 +110,8 @@
         </div>
       </section>
 
-      <section class="card__exp">
-        <span class="card__title"> Experiencia </span>
+      <section class="card__exp" id="experience">
+        <span class="card__title"> Experience </span>
 
         <div class="card__exp--item">
           <img
@@ -104,7 +126,7 @@
             <p class="card__subtitle--tiny">2015-2017</p>
           </div>
 
-          <span class="card__title--big">2 años</span>
+          <span class="card__title--big">2 years</span>
         </div>
 
         <div class="card__exp--item">
@@ -118,7 +140,7 @@
             <p class="card__subtitle--small">Senior UX/UI</p>
             <p class="card__subtitle--tiny">2017-2018</p>
           </div>
-          <span class="card__title--big">1 año</span>
+          <span class="card__title--big">1 year</span>
         </div>
         <div class="card__exp--item">
           <img
@@ -130,12 +152,12 @@
             <p class="card__title--big">Google</p>
             <p class="card__subtitle--small">Product Designer</p>
           </div>
-          <span class="card__title--big">2 años</span>
+          <span class="card__title--big">2 years</span>
         </div>
       </section>
 
-      <section class="card_portfolio">
-        <span class="card__title">Portafolio</span>
+      <section class="card_portfolio" id="portfolio">
+        <span class="card__title">Portfolio</span>
         <div class="card__portfolio--imgs">
           <img
             src="./src/Imágenes/ejemplo 2.png"
@@ -160,11 +182,11 @@
         </div>
       </section>
 
-      <section class="card__contact">
-        <span class="card__title">Contacto</span>
+      <section class="card__contact" id="contact">
+        <span class="card__title">Contact</span>
         <div class="card__contact--item">
           <img src="./src/íconos/phone.svg" alt="" />
-          <span class="card__title--big"> Número celular </span>
+          <span class="card__title--big"> Phone Number </span>
           <span class="card__subtitle--smal"> 5526895424 </span>
         </div>
 
@@ -176,8 +198,18 @@
       </section>
 
       <section class="card__footer">
-        <span class="card__footer--purple">Hecho con 💜 en Academlo</span>
+        <p class="card__footer--purple card__code">
+          Take a look at the
+          <a
+            href="https://github.com/TheMayanCitizen/Academlo-Portfolio"
+            target="_blank"
+            ><b>CODE</b></a
+          >
+        </p>
+        <span class="card__footer--purple">Made with 💜 in Academlo</span>
       </section>
     </div>
+
+    <script src="./src/js/main.js"></script>
   </body>
 </html>
