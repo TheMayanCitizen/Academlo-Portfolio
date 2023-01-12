@@ -402,5 +402,6 @@ a {
 @media (min-width: 1024px) {
   .card {
     max-width: 1024px;
+    background-color: var(--white);
   }
 }
